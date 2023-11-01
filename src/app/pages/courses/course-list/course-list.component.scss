@@ -1,0 +1,30 @@
+.form-field-category {
+  @media (min-width: 600px) {
+    padding-right: 10px;
+  }
+}
+
+::ng-deep .mat-paginator-container {
+  padding: 0 0 !important;
+}
+
+::ng-deep .mat-paginator-range-label {
+  padding: 0 0 !important;
+}
+
+mat-card {
+  border-radius: 0;
+  margin-bottom: 4px;
+  box-shadow: 0 1px 2px 1px rgb(0 0 0 /25%);
+  transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12),
+  .3s box-shadow, .3s -wedkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+  cursor: pointer;
+
+  &-title {
+    font-size: 20px;
+  }
+}
+
+mat-card:hover {
+  transform: scale(1.01);
+}

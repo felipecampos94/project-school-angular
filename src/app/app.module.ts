@@ -8,6 +8,7 @@ import {MaterialModule} from "./shared/materials/material.module";
 import {MatButtonModule} from "@angular/material/button";
 import {ToolbarMenuComponent} from "./shared/components/toolbar-menu/toolbar-menu.component";
 import {MatMenuModule} from "@angular/material/menu";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import {MatMenuModule} from "@angular/material/menu";
     MaterialModule,
     MatButtonModule,
     MatMenuModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

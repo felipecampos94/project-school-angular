@@ -3,6 +3,7 @@ import {ToolbarTitleComponent} from "./components/toolbar-title/toolbar-title.co
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatIconModule} from "@angular/material/icon";
 import {FlexLayoutModule} from "@angular/flex-layout";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -11,11 +12,16 @@ import {FlexLayoutModule} from "@angular/flex-layout";
   ],
   exports: [
     ToolbarTitleComponent,
+    FlexLayoutModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   imports: [
     MatToolbarModule,
     MatIconModule,
     FlexLayoutModule,
+    FormsModule,
+    ReactiveFormsModule,
   ]
 })
 export class SharedModule {
